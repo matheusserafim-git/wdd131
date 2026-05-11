@@ -53,6 +53,7 @@ nav a {
     padding: 1rem;
     text-decoration: none;
     transition: 0.3s;
+    font-family: "poppins", sans-serif;
 }
 
 nav a:hover {
@@ -172,7 +173,6 @@ footer {
 
     .about-content{
         display: flex;
-        flex-direction: row-reverse;
     }
     .country-content {
         display: flex;
