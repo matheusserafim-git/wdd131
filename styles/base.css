@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* HEADER */
+
+header {
+    background-color: #1f4c73;
+    color: white;
+    text-align: center;
+}
+
+/* COURSE TITLE */
+
+#course-title {
+    display: block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* NAVIGATION */
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+nav ul li {
+    flex: 1;
+}
+
+nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+/* MAIN */
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+/* PAGE TITLE */
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 300;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.card h2 {
+    background-color: #1f4c73;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.about-content p {
+    flex: 1;
+    line-height: 1.8;
+}
+
+
+.country-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.5rem;
+}
+
+.country-content p {
+    line-height: 1.6;
+}
+
+
+img {
+    display: block;
+    height: auto;
+}
+
+.profile-image {
+    width: 180px;
+}
+
+.flag-image {
+    width: 180px;
+}
+
+/* RESOURCES */
+
+.card ul {
+    padding: 2rem;
+}
+
+.card li {
+    margin-bottom: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #1f4c73;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#lastModified {
+    color: yellow;
+    margin-top: 0.5rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+
+    .cards-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    }
+
+    .about-content{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .country-content {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .profile-image,
+    .flag-image {
+    width: 200px;
+    height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    p{
+        font-family: 'Times New Roman', Times, serif;
+    }
+}

@@ -6,35 +6,47 @@
     <meta name="description" content="WDD 131 – Dynamic Web Fundamentals – Matheus Serafim  – This is the index.html file for the WDD 131 course.">
     <meta name="author" content="Matheus Serafim">
     <title>WDD 131 – Dynamic Web Fundamentals – Matheus Serafim</title>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/base.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
         <nav>
             <ul>
                 <li><a href="https://www.linkedin.com/in/matheus-serafim-b378901b4/">LinkedIn</a></li>
                 <li><a href="https://byupw.instructure.com/.">Canvas</a></li>
                 <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/25?lang=por&id=p26#p26">Favorite scripture</a></li>
+                <li><a href="#">Final Project</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h1>Matheus Serafim</h1>
-        <section>
-            <h2>Welcome to WDD 131 – Dynamic Web Fundamentals</h2>
-            <p>This course is designed to teach you the fundamentals of dynamic web development. You will learn how to create interactive and responsive websites using HTML, CSS, and JavaScript.</p>
+        <div class="cards-container">
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/profile.jpeg" alt="Matheus Serafim" class="profile-image">
+            <p>I am a passionate web developer with a strong foundation in HTML, CSS, and JavaScript. I enjoy creating interactive and responsive websites that provide great user experiences.</p>
         </section>
-        <sections>
-            <h2>Course Objectives</h2>
-            <ul>
-                <li>Understand the basics of HTML, CSS, and JavaScript.</li>
-                <li>Learn how to create responsive web designs.</li>
-                <li>Develop interactive web applications.</li>
-                <li>Gain hands-on experience with web development tools and frameworks.</li>
-            </ul>
-        </sections>
+        <section class="card">
+            <h2>Brasil</h2>
+            <img src="images/Brasil flag.png" alt="Brazil Flag" class="course-image">
+            <p>Brazil is a vibrant country known for its rich culture, beautiful landscapes, and passionate people. It is home to the Amazon rainforest, stunning beaches, and lively festivals like Carnival.</p>
+        </section>
+        </div>
     </main>
     <footer>
-        <p>&copy; 2024 Matheus Serafim. All rights reserved.</p>
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            Matheus Serafim. Brasil.
+        </p>
+        <p id="lastmodified"></p>
     </footer>
 </body>
 </html>
