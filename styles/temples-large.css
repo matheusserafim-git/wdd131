@@ -1,29 +1,25 @@
-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-
-nav ul {
-	flex-direction: row;
-}
-
-nav a {
-	flex: 1 1 100%;
-}
-
-.container {
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-}
-
 @media (min-width: 740px) {
 
-	#menu {
-		display: none;
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 
-	.navigation {
-		display: flex;
-		flex-direction: row;
+	nav ul {
+        display: flex;
+        flex-direction: row;
+		justify-content: flex-end;
+        gap: 1rem;
+	}
+
+	nav a {
+		flex: none;
+	}
+
+	.container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		gap: 25px;
 	}
 }

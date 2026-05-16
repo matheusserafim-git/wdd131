@@ -10,12 +10,13 @@ body {
 
 /* mobile **************************/
 header {
-	background-color: #caddd4;
+	background-color: #b6d7dd;
 	display: grid;
 	grid-gap: 1rem;
 	padding: 20px;
 	border: 1px solid rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0 30px #9ff5f1;
+	box-shadow: 0 0 30px #77d1cd;
+    position: relative;
 }
 
 header,
@@ -24,12 +25,12 @@ main {
 	margin: 0 auto;
 }
 
-h1 {
+h1, h2 {
 	font-size: 2rem;
 }
 
 nav {
-	background-color: #629dc4;
+	background-color: #baeeee;
 }
 
 nav ul {
@@ -40,7 +41,7 @@ nav ul {
 
 nav a {
 	display: block;
-	color: #fcfbfb;
+	color: #111111;
 	text-align: center;
 	padding: 1rem;
 	text-decoration: none;
@@ -58,12 +59,10 @@ nav a:hover {
 }
 
 .container {
-	display: grid;
-	grid-template-columns:1fr;
-	grid-gap: 25px;
-    
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
 }
-
 figure img {
 	width: 100%;
 	height: auto;
@@ -107,23 +106,5 @@ footer {
 	padding: 1rem;
 }
 
-/* Larger Views ******************************/
-@media (min-width: 740px) {
-	header {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	nav ul {
-		justify-content: flex-end;
-		flex-direction: row;
-	}
-	nav a {
-		flex: 1 1 100%;
-	}
-    .container {
-		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	}
-}
 
 
