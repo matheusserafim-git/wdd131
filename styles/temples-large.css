@@ -1,0 +1,29 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav ul {
+	flex-direction: row;
+}
+
+nav a {
+	flex: 1 1 100%;
+}
+
+.container {
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+@media (min-width: 740px) {
+
+	#menu {
+		display: none;
+	}
+
+	.navigation {
+		display: flex;
+		flex-direction: row;
+	}
+}
