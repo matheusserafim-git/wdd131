@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #002e5d;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+main {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+form {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+label,
+legend {
+    font-weight: 600;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+}
+
+select,
+input[type="date"],
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: .75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+fieldset {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+fieldset label {
+    display: inline-block;
+    margin-right: 1rem;
+    margin-top: .5rem;
+}
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.feature-item label {
+    margin: 0;
+    font-weight: normal;
+}
+
+.feature-item input {
+    margin: 0;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: .3rem;
+}
+
+input[type="submit"] {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: .9rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #0062b8;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #004b8d;
+}
+
+footer {
+    background-color: #002e5d;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#lastModified {
+    margin-top: .5rem;
+    font-size: .9rem;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <title>Form</title>
+</head>
+
+<body>
+   <header>
+    <h1>Product Review</h1> 
+    </header>
+
+    <main>
+        <form method="get" action="review.html">
+            <label for="name">Select a product</label>
+            <select name="name" id="name" required>
+                <option value="" selected disabled>
+                    Select a product
+                </option>
+            </select>
+
+            <fieldset>
+                <legend> Overall Rating</legend>
+
+                <input type="radio" name="rating" id="rating1" value="1" required>
+                <label for="rating1">☆</label>
+
+                <input type="radio" name="rating" id="rating2" value="2">
+                <label for="rating2">☆☆</label>
+
+                <input type="radio" name="rating" id="rating3" value="3">
+                <label for="rating3">☆☆☆</label>
+                <input type="radio" name="rating" id="rating4" value="4">
+                <label for="rating4">☆☆☆☆</label>
+
+                <input type="radio" name="rating" id="rating5" value="5">
+                <label for="rating5">☆☆☆☆☆</label>
+            </fieldset>
+
+            <label for="installDate">Installation Date</label>
+            <input type="date" name="installDate" id="installDate" required>
+
+            <fieldset class="features">
+                <legend>Which features did you find useful in the product?
+                    (Select all that apply)
+                </legend>
+                <input type="checkbox" name="features" id="Durability" value="Durability">
+                <label for="Durability">Durability</label>
+                <input type="checkbox" name="features" id="EaseOfUse" value="Ease of use">
+                <label for="EaseOfUse">Ease of use</label>
+                <input type="checkbox" name="features" id="Performance" value="Performance">
+                <label for="Performance">Performance</label>
+                <input type="checkbox" name="features" id="Design" value="Design">
+                <label for="Design">Design</label>
+            </fieldset>
+
+            <label for="review">Review</label>
+            <textarea name="review" id="review"></textarea>
+
+            <label for="userName">Username</label>
+            <input type="text" name="userName" id="userName">
+
+            <button type="submit" value="Post Review">Post Review</button>
+        </form>
+
+    </main>
+
+
+<footer>
+    <p>
+    &copy;
+    <span id="currentyear"></span>
+    🪪Matheus Serafim. Brasil.
+    </p>
+    <p id="lastModified"></p>
+</footer>
+</body>
+</html>
