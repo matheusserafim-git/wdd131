@@ -35,7 +35,7 @@ main {
 }
 
 form {
-    background-color: white;
+    background-color: var(--white);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
@@ -55,7 +55,7 @@ input[type="text"],
 textarea {
     width: 100%;
     padding: .75rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--gray-border);
     border-radius: 4px;
     font-size: 1rem;
 }
@@ -68,7 +68,7 @@ textarea {
 fieldset {
     margin-top: 1.5rem;
     padding: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid var(--gray-border);
     border-radius: 5px;
 }
 
