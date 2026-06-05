@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/form.css">"
+    <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
-    <script src="scripts/review.js" defer></script>
     <title>Form</title>
 </head>
 
@@ -16,8 +15,8 @@
 
     <main>
         <form method="get" action="review.html">
-            <label for="name">Select a product</label>
-            <select name="name" id="name" required>
+            <label for="product">Select a product</label>
+            <select name="product" id="productName" required>
                 <option value="" selected disabled>
                     Select a product
                 </option>
@@ -48,19 +47,19 @@
                 <legend>Which features did you find useful in the product?
                     (Select all that apply)
                 </legend>
-                <div class="features-item">
+                <div class="feature-item">
                     <input type="checkbox" name="features" id="Durability" value="Durability">
                     <label for="Durability">Durability</label>
                 </div>
-                <div class="features-item">
+                <div class="feature-item">
                     <input type="checkbox" name="features" id="EaseOfUse" value="Ease of use">
                     <label for="EaseOfUse">Ease of use</label>
                 </div>
-                <div class="features-item">
+                <div class="feature-item">
                     <input type="checkbox" name="features" id="Performance" value="Performance">
                     <label for="Performance">Performance</label>
                 </div>
-                <div class="features-item">
+                <div class="feature-item">
                     <input type="checkbox" name="features" id="Design" value="Design">
                     <label for="Design">Design</label>
                 </div>
@@ -72,7 +71,7 @@
             <label for="userName">Username</label>
             <input type="text" name="userName" id="userName">
 
-            <button type="submit" value="Post Review">Post Review</button>
+            <input type="submit" value="Post Review">
         </form>
 
     </main>
