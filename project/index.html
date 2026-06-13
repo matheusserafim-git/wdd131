@@ -46,22 +46,25 @@
                 type="text"
                 id="search"
                 placeholder="Search for attractions...">
+                <p id="no-results" hidden>
+                    No attractions found.
+                </p>
         </section>
 
         <section class="categories">
             <h2>Categories</h2>
             <div class="category-grid">
-                <article>Nature</article>
-                <article>events</article>
-                <article>History</article>
-                <article>Food</article>
+                <a href="attractions.html#places">Places</a>
+                <a href="attractions.html#food">Food</a>
+                <a href="attractions.html#history">History</a>
+                <a href="attractions.html#events">Events</a>
             </div>
         </section> 
 
         <section class="featured">
                 <h2>Featured Attractions</h2>
                 <div class="featured-grid">
-                    <a href="attractions.html#redencao-park" class="atraction-card">
+                    <a href="attractions.html#redencao" class="atraction-card">
                         <article>
                             <img src="/images/redencao.webp" alt="Redenção Park" width="300" height="200" loading="lazy">
                             <h3>Redenção Park</h3>
@@ -75,7 +78,7 @@
                             <p>The iconic Gasômetro is a symbol of Porto Alegre's industrial heritage.</p>
                         </article>
                     </a>
-                    <a href="attractions.html#ibere-camargo" class="atraction-card">
+                    <a href="attractions.html#ibere" class="atraction-card">
                         <article>
                             <img src="/images/ibere-camargo.webp" alt="Iberê Camargo Museum" width="300" height="200" loading="lazy">
                             <h3>Iberê Camargo Museum</h3>
@@ -102,10 +105,36 @@
         
     </main>
 
-    <footer id="contact">
-        <p>Contact us at: inf@discoverPOA.com</p>
-        <p>&copy; 2026 Discover Porto Alegre</p>
-    </footer>
-    
+   <footer>
+    <div class="footer-content">
+
+        <div class="footer-section footer-brand">
+            <img src="/images/logo.svg" alt="logo discover POA" width="150">
+            <h3>Discover Porto Alegre</h3>
+            <p>Your guide to culture, history, food and attractions.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attractions.html">Attractions</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <p>info@discoverpoa.com</p>
+            <p>Porto Alegre, RS, Brazil</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2026 Discover Porto Alegre | Matheus Serafim</p>
+        <p>WDD 131 Final Project</p>
+    </div>
+</footer>
 </body>
 </html>

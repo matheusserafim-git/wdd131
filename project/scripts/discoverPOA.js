@@ -111,3 +111,33 @@ async function getWeather() {
 getWeather();
 
 setInterval(getWeather, 10 * 60 * 1000);
+
+const searchInput =
+document.querySelector("#search");
+
+const cards =
+document.querySelectorAll(".featured-grid article");
+
+searchInput.addEventListener("input", () => {
+
+    const searchTerm =
+    searchInput.value.toLowerCase();
+
+    cards.forEach((card) => {
+
+        const content =
+        card.textContent.toLowerCase();
+
+        if (content.includes(searchTerm)) {
+
+            card.parentElement.style.display = "";
+
+        } else {
+
+            card.parentElement.style.display = "none";
+
+        }
+
+    });
+
+});
