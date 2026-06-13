@@ -1,0 +1,38 @@
+<svg width="180" height="70" viewBox="0 0 180 70" xmlns="http://www.w3.org/2000/svg">
+
+  <g fill="none" stroke="white" stroke-width="2.5" stroke-linejoin="round">
+
+    <!-- Chaminé -->
+    <rect x="120" y="10" width="12" height="40"></rect>
+
+    <!-- Corpo principal -->
+    <rect x="40" y="25" width="80" height="25"></rect>
+
+    <!-- Torre lateral -->
+    <rect x="25" y="18" width="15" height="32"></rect>
+
+    <!-- Telhado -->
+    <path d="M20 25 L80 10 L125 25"></path>
+
+    <!-- Janelas -->
+    <rect x="50" y="32" width="8" height="8"></rect>
+    <rect x="65" y="32" width="8" height="8"></rect>
+    <rect x="80" y="32" width="8" height="8"></rect>
+    <rect x="95" y="32" width="8" height="8"></rect>
+
+    <!-- Base -->
+    <line x1="15" y1="50" x2="145" y2="50"></line>
+
+    <!-- Água do Guaíba -->
+    <path d="M10 58
+             Q20 54 30 58
+             T50 58
+             T70 58
+             T90 58
+             T110 58
+             T130 58
+             T150 58"></path>
+
+  </g>
+
+</svg>

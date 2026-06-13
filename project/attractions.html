@@ -3,27 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attractions</title>
+    <title>Attractions | Discover Porto Alegre</title>
+
     <link rel="stylesheet" href="styles/discoverPOA.css">
-    <script src="scripts/discoverPOA.js" defer></script>
-    <meta name=""author" content="Matheus Serafim" />
+    <script src="scripts/attractions.js" defer></script>
 </head>
+
 <body>
 
 <header>
     <h1>Discover Porto Alegre</h1>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="attractions.html">Attractions</a>
-        <a href="contact.html">Contact</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="attractions.html" class="active">Attractions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
 </header>
 
 <main>
-    <h2>Tourist Attractions</h2>
 
-    <div id="attraction-container"></div>
+    <section class="hero-small">
+        <h2>Porto Alegre Attractions</h2>
+        <p>
+            Discover the most iconic places in the capital of Rio Grande do Sul.
+        </p>
+    </section>
+
+    <section class="search">
+        <input
+            type="text"
+            id="search-attraction"
+            placeholder="Search attractions...">
+    </section>
+
+    <section id="attractions-container">
+
+        <article id="redencao">
+            <img src="/images/redencao.webp" width="400" height="300" loading="lazy"
+                 alt="Parque da Redenção"
+                 loading="lazy">
+
+            <h2>Parque da Redenção</h2>
+
+            <p>
+                Farroupilha Park, popularly known as Redenção,
+                is the most famous urban park in Porto Alegre.
+            </p>
+        </article>
+
+        <article id="gasometro">
+            <img src="/images/gasometro.webp" width="400" height="300" loading="lazy"
+                 alt="Usina do Gasômetro"
+                 loading="lazy">
+
+            <h2>Usina do Gasômetro</h2>
+
+            <p>
+                One of Porto Alegre's most important landmarks,
+                famous for its sunsets over the Guaíba.
+            </p>
+        </article>
+
+        <article id="ibere">
+            <img src="/images/ibere-camargo.webp" width="400" height="300" loading="lazy"
+                 alt="Fundação Iberê Camargo"
+                 loading="lazy">
+
+            <h2>Fundação Iberê Camargo</h2>
+
+            <p>
+                A modern art museum designed by architect
+                Álvaro Siza.
+            </p>
+        </article>
+    </section>
+
 </main>
 
 <footer>

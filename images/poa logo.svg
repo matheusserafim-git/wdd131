@@ -1,0 +1,29 @@
+<svg width="180" height="70" viewBox="0 0 180 70" xmlns="http://www.w3.org/2000/svg">
+
+    <g stroke="#5A6F95" stroke-width="2" fill="none">
+
+        <path d="M10 45 L35 20 L60 45"></path>
+
+        <path d="M25 45 L35 10 L45 45"></path>
+
+        <line x1="5" y1="45" x2="65" y2="45"></line>
+
+        <line x1="15" y1="45" x2="15" y2="60"></line>
+
+        <line x1="35" y1="45" x2="35" y2="60"></line>
+
+        <line x1="55" y1="45" x2="55" y2="60"></line>
+
+        <line x1="10" y1="60" x2="60" y2="60"></line>
+
+    </g>
+
+    <text x="75" y="30" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#27477A">
+        DISCOVER
+    </text>
+
+    <text x="75" y="48" font-family="Poppins, sans-serif" font-size="12" font-weight="700" fill="#27477A">
+        PORTO ALEGRE
+    </text>
+
+</svg>

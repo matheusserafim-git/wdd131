@@ -1,19 +1,43 @@
-[
+const attractions = [
     {
-        "name": "Parque Farroupilha",
-        "type": "Nature",
-        "image": "images/gasometro.webp"
+        id: "redencao",
+        name: "Redenção Park"
     },
-
     {
-        "name": "Usina do Gasômetro",
-        "type": "History",
-        "image": "images/redencao.webp"
+        id: "gasometro",
+        name: "Usina do Gasômetro"
     },
-
     {
-        "name": "Fundação Iberê Camargo",
-        "type": "Museum",
-        "image": "images/ibere-camargo.webp"
+        id: "ibere",
+        name: "Iberê Camargo Museum"
     }
-]
+];
+
+const searchInput =
+document.querySelector("#search-attraction");
+
+const attractions =
+document.querySelectorAll("#attractions-container article");
+
+searchInput.addEventListener("input", () => {
+
+    const searchTerm =
+    searchInput.value.toLowerCase();
+
+    attractions.forEach(attraction => {
+
+        const title =
+        attraction.querySelector("h2")
+        .textContent
+        .toLowerCase();
+
+        if (title.includes(searchTerm)) {
+            attraction.style.display = "block";
+        }
+        else {
+            attraction.style.display = "none";
+        }
+
+    });
+
+});

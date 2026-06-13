@@ -11,7 +11,18 @@
 </head>
 <body>
     <header>
-        <h1>Discover Porto Alegre</h1>
+        <div class="left-header">
+            <button id="menu-button" aria-label="Open menu">☰</button>
+            
+            <div class="logo-container">
+                <img src="/images/logo.svg" alt="Discover Porto Alegre Logo" width="95" height="60">
+
+                <div class="site-title">
+                    <span>DISCOVER</span>
+                    <span>PORTO ALEGRE</span>
+                </div>
+            </div>
+        </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -27,7 +38,7 @@
             <p>
                 Explore the culture, naure and history of our city.
             </p>
-            <button>Explore Places</button>
+            <button id="explore-btn">Explore Places</button>
         </section>
 
         <section class="search">
@@ -50,30 +61,37 @@
         <section class="featured">
                 <h2>Featured Attractions</h2>
                 <div class="featured-grid">
-                    <article>
-                        <img src="/images/redencao.webp" alt="Redenção Park" width="300" height="200" loading="lazy">
-                        <h3>Redenção Park</h3>
-                        <p>The most famous park in Porto Alegre. Perfect for walking and relaxation.</p>
-                    </article>
-                    <article>
-                        <img src="/images/gasometro.webp" alt="Gasômetro" width="300" height="200" loading="lazy">
-                        <h3>Gasômetro</h3>
-                        <p>The iconic Gasômetro is a symbol of Porto Alegre's industrial heritage.</p>
-                    </article>
-                    <article>
-                        <img src="/images/ibere-camargo.webp" alt="Iberê Camargo Museum" width="300" height="200" loading="lazy">
-                        <h3>Iberê Camargo Museum</h3>
-                        <p>A modern art museum showcasing the works of Iberê Camargo.</p>
-                    </article>
+                    <a href="attractions.html#redencao-park" class="atraction-card">
+                        <article>
+                            <img src="/images/redencao.webp" alt="Redenção Park" width="300" height="200" loading="lazy">
+                            <h3>Redenção Park</h3>
+                            <p>The most famous park in Porto Alegre. Perfect for walking and relaxation.</p>
+                        </article>
+                    </a>
+                    <a href="attractions.html#gasometro" class="atraction-card">
+                        <article>
+                            <img src="/images/gasometro.webp" alt="Gasômetro" width="300" height="200" loading="lazy">
+                            <h3>Gasômetro</h3>
+                            <p>The iconic Gasômetro is a symbol of Porto Alegre's industrial heritage.</p>
+                        </article>
+                    </a>
+                    <a href="attractions.html#ibere-camargo" class="atraction-card">
+                        <article>
+                            <img src="/images/ibere-camargo.webp" alt="Iberê Camargo Museum" width="300" height="200" loading="lazy">
+                            <h3>Iberê Camargo Museum</h3>
+                            <p>A modern art museum showcasing the works of Iberê Camargo.</p>
+                        </article>
+                    </a>
                 </div>
 
         </section>
 
         <section class="weather">
             <h2>Current Weather in Porto Alegre</h2>
+            <img src="/images/cloud-sun.svg" alt="Weather Icon" width="50" height="50">
             <div class="weather-card">
-                <h3>24°C</h3>
-                <p>Partly Cloudy</p>
+                <h3 id="temperature">loading...</h3>
+                <p id="description">loading...</p>
             </div>
         </section>
 
